@@ -1,7 +1,7 @@
 <?php 
 
 // maneira correta de escrever php variavel usar a mesma forma no codigo inteiro
-/*
+
 $name  = 'jonas';
 $variavel = 100;
 $var1 = 0;
@@ -33,9 +33,16 @@ $resultado = 1000 + $a + 10 + $b;
 
 
 
-*/
 
 
+// no php 7 foi adicionado um novo operador de comparação
+// desligando por spaceship operador 
+
+//<=>
+
+// se os valores são iguais é = 0
+// se os valores são A maior que B = 1
+//se os valores são A menor que B = -1
 
 ?>
 
