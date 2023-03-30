@@ -2,6 +2,8 @@
 
 // maneira correta de escrever php variavel usar a mesma forma no codigo inteiro
 
+/*
+
 $name  = 'jonas';
 $variavel = 100;
 $var1 = 0;
@@ -43,6 +45,19 @@ $resultado = 1000 + $a + 10 + $b;
 // se os valores são iguais é = 0
 // se os valores são A maior que B = 1
 //se os valores são A menor que B = -1
+*/
+
+/*
+$a = 'jonas';
+$b = 'pedro';
+$todo_nome = "$a $b";
+
+echo $todo_nome;
+*/
+
+
+
+
 
 ?>
 
