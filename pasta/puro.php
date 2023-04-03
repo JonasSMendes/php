@@ -33,4 +33,19 @@ echo $name;
 
 $color = 1;
 
-//<h2 style="color: <?= $color == 0 ? 'red' : 'blue'?>"> esse texto foi mudado com php</h2>
+
+$v = 'eu te amo';
+
+do{
+    echo $v++ . '<br>';
+
+}while($v <= 100);
+
+//<h2 style="color: <?= $color == 0 ? 'red' : 'blue' *>  <"> esse texto foi mudado com php</h2>;
+
+// sizeof  => permite que você conte quantos valores seu array tem pode se usar count que o resultado é igual.
+
+
+
+
+

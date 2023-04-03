@@ -106,7 +106,52 @@ $color = 1;
 
 ?>
 
-<h2 style="color: <?= $color == 0 ? 'red' : 'blue'?>"> esse texto foi mudado com php</h2>
+<h2 style="color: <?= $color == 0 ? 'red' : 'blue'?>"> esse texto foi mudado com php</h2>;
+
+<?php
+$v = 'eu te amo';
+
+do{
+    echo $v++ . '<br>';
+
+}while($v < 10);
+
+for ($v = 1; $v < 10; $v++ ){
+    echo 'eu te amo' . '<br>';
+};
+
+echo '<br>';echo '<br>';
+
+$capitais = [
+    'do Brasil' => 'Brasilia',
+    'de Portugal' => 'Lisboa',
+    'da Espanha' => 'Madrid'
+
+];
+foreach( $capitais as $kay => $value ){
+    echo "eu moro na capital $kay que é $value" . '<br>';
+};
+
+echo '<br>';echo '<br>';
+
+adicionar(10, 30);
+
+function adicionar($a ,$b){
+    echo "$a + $b = ". $a + $b; 
+}
+
+
+echo '<br>';echo '<br>';
+
+
+$helo = function($a){
+    echo "ola eu sou anonimo $a ";
+};
+
+$helo('e sou feliz');
+
+?>
+
 
 </body>
 </html>
