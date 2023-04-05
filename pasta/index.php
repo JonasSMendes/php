@@ -150,6 +150,11 @@ $helo = function($a){
 
 $helo('e sou feliz');
 
+echo '<br>';echo '<br>';
+
+
+
+
 ?>
 
 
