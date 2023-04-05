@@ -153,6 +153,11 @@ $helo('e sou feliz');
 echo '<br>';echo '<br>';
 
 
+$conta = function($a, $b){
+    echo $a + $b;
+};
+
+$conta(20, 60);
 
 
 ?>
