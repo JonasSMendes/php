@@ -45,7 +45,42 @@ do{
 
 // sizeof  => permite que você conte quantos valores seu array tem pode se usar count que o resultado é igual.
 
+//class
+class Humano{
+    public $nome = 'jonas';
+    public $sobrenome = 'mendes';
 
+    public function nomecompleto(){
+        return $this->nome.' '.$this->sobrenome;  
+    }
+};
+
+$humano = new Humano();
+
+echo $humano->nomecompleto();
+
+
+class humano1{
+    private $nome = 'jonas';
+    private $sobrenome = 'mendes';
+    private $idade = 22;
+
+    function __construct($a , $b, $c)
+    {
+        $this->nome = $a;
+        $this->sobrenome = $b;
+        $this->idade = $c;
+    }
+
+    public function suasInfos(){
+        return "oi eu sou $this->nome $this->sobrenome e tenho $this->idade de idade";
+    }
+
+}
+
+$pessoa = new humano1('vitor', 'marques', 35);
+
+echo $pessoa->suasInfos();
 
 
 

@@ -1,5 +1,7 @@
 <?php
 
+use Humano as GlobalHumano;
+
 $nome = 'jonas';
 $sobrenome = 'mendes';
 
@@ -158,6 +160,49 @@ $conta = function($a, $b){
 };
 
 $conta(20, 60);
+
+echo '<br>';echo '<br>';
+
+class Humano{
+    public $nome = 'jonas';
+    public $sobrenome = 'mendes';
+
+    public function nomecompleto(){
+        $nome = 'teste';
+        return $this->nome.' '.$this->sobrenome;  
+    }
+};
+$humano = new Humano();
+
+echo $humano->nomecompleto();
+
+echo '<br>';echo '<br>';
+
+class humano1{
+    public $nome = 'jonas';
+    public $sobrenome = 'mendes';
+    public $idade = 22;
+
+    function __construct($a,$b,$c)
+    {
+        $this->nome = $a;
+        $this->sobrenome = $b;
+        $this->idade = $c;
+    }
+
+    public function suasInfos(){
+        return "oi eu sou $this->nome $this->sobrenome e tenho $this->idade anos de idade";
+    }
+
+}
+
+$pessoa = new humano1('pedro','marques', 45);
+$mulher = new humano1('marcia','bitencur', 56);
+
+
+echo $pessoa->suasInfos();
+echo '<br>';
+echo $mulher->suasInfos();
 
 
 ?>
