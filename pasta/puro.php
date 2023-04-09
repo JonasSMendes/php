@@ -84,3 +84,23 @@ echo $pessoa->suasInfos();
 
 
 
+//game
+
+class Personagem{
+
+    function __construct(public $classe, public $defesa, public $ataque)
+    {
+         $this->classe = $classe;
+         $this->defesa = $defesa;
+         $this->ataque = $ataque;
+    }
+
+    public function meuChar(){
+        
+        
+
+    }
+}
+
+$mago = new Personagem('mago', 4, 15);
+
